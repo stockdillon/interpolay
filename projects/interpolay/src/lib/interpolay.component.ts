@@ -1,17 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'lib-interpolay',
-  template: `
-    <p>
-      interpolay works!
-    </p>
-  `,
+  templateUrl: './interpolay.component.html',
   styles: [
   ]
 })
 export class InterpolayComponent implements OnInit {
-
+  @Input() keywordOverlayMap = {'interpolay': ''};
   constructor() { }
 
   ngOnInit(): void {

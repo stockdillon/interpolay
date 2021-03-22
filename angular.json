@@ -5,6 +5,11 @@
   "projects": {
     "interpolay": {
       "projectType": "library",
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      },
       "root": "projects/interpolay",
       "sourceRoot": "projects/interpolay/src",
       "prefix": "lib",
